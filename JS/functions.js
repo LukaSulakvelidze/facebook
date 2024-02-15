@@ -90,9 +90,10 @@ export function registration_validation() {
 
   if (
     password_reg.value === "" ||
-    password_reg.length > 8 ||
-    password_reg.length < 22
+    password_reg.value.length > 8 ||
+    password_reg.value.length < 22
   ) {
+    password_reg.value = ""
     password_reg.style.border = "solid 1px #f02849";
     password_reg.style.background =
       "#f5f6f7 url(./Assets/circle-exclamation-solid.svg) no-repeat  top 50% right 10px";
@@ -100,7 +101,6 @@ export function registration_validation() {
     password_reg.style.border = "solid 1px #ccd0d5";
     password_reg.style.background = "unset";
     password_reg.style.backgroundColor = "#f5f6f7";
-    console.log("check");
     localStorage.setItem("password", password_reg.value);
   }
 
@@ -181,11 +181,9 @@ export function registration_validation() {
       femail_input.checked = false;
       male_input.checked = false;
       custom_input.checked = false;
-    } else {
-      console.log("error");
     }
   } else {
-    console.log("chepe");
+    console.log("");
   }
 }
 
