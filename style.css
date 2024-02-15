@@ -1,0 +1,376 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main,
+div,
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  align-items: center;
+  gap: 40px;
+  padding: 10px 0 164px;
+  background-color: #f0f2f5;
+}
+
+.main_text {
+  align-items: center;
+  text-align: center;
+}
+
+.main_text > .Facebook_headline {
+  width: 320px;
+  height: 106px;
+}
+
+.main_text > h1 {
+  font-size: 24px;
+  font-weight: normal;
+  width: 369px;
+  color: #1c1e21;
+}
+
+.container {
+  gap: 28px;
+  width: 81%;
+  align-items: center;
+}
+
+.login_container {
+  gap: 16px;
+  width: 100%;
+  padding: 20px 16px 28px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#log_in_form {
+  gap: 16px;
+}
+
+#log_in_form > input {
+  font-size: 17px;
+  height: 51px;
+  padding: 14px 16px;
+  outline-color: #1b74e4;
+  outline-width: 0.3px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+}
+
+#label_for_email,
+#label_for_password,
+.find_account,
+.red_forgot_password {
+  display: none;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  line-height: 16px;
+  margin-top: -8px;
+  color: #f02849;
+}
+
+.red_forgot_password,
+.find_account {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.red_forgot_password:hover,
+.find_account:hover {
+  text-decoration: underline;
+}
+
+#login {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 48px;
+  padding: 0 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  background-color: #1877f2;
+}
+
+.forgot_password {
+  align-self: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.34;
+  text-decoration: none;
+  cursor: pointer;
+  color: #1877f2;
+}
+
+.forgot_password:hover {
+  text-decoration: underline;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #dadde1;
+}
+
+#new_account {
+  align-self: center;
+  font-size: 17px;
+  line-height: 48px;
+  margin-top: 10px;
+  padding: 0 16px;
+  width: 192px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  background-color: #42b72a;
+}
+
+#celebrity {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #1c1e21;
+}
+
+#celebrity > b:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sign_up_container {
+  position: absolute;
+  top: 14%;
+  right: 50%;
+  transform: translate(50%, 0);
+  display: none;
+  width: 87%;
+  border-radius: 8px;
+  padding: 10px 0 16px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* registration modal */
+.head_part_cont {
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 16px 16px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.sign_up {
+  font-size: 32px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 38px;
+  color: #1c1e21;
+}
+
+.sign_text > p {
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 24px;
+  color: #606770;
+}
+
+.x_icon {
+  position: absolute;
+  font-size: 1rem;
+  top: 10px;
+  right: 16px;
+  cursor: pointer;
+}
+
+#registration_form {
+  gap: 10px;
+  padding: 16px 16px;
+}
+
+#registration_form > input,
+.form_first_row > input,
+.select_cont > select {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 11px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+}
+
+#registration_form > input,
+.form_first_row > input {
+  background: #f5f6f7;
+}
+
+.form_first_row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form_first_row > input {
+  width: 49%;
+}
+
+.about_text {
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.about_text > span {
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 20px;
+  margin-top: 2px;
+  color: #606770;
+}
+
+.about_text > i {
+  font-size: 12px;
+  color: #606770;
+}
+
+.select_cont {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.select_cont > select {
+  line-height: 20px;
+  width: 32%;
+  height: 36px;
+  padding: 0 8px;
+  color: #1c1e21;
+}
+
+.gender_button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 32%;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+  cursor: pointer;
+  color: #1c1e21;
+  background-color: white;
+}
+
+.bottom_text {
+  padding: 0 16px;
+  gap: 11px;
+}
+
+.bottom_text > p {
+  font-size: 11px;
+  color: #777;
+}
+
+.bottom_text > p > a {
+  text-decoration: none;
+  color: #385898;
+}
+
+.bottom_text > p > a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#sign_up {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 600;
+  height: 36px;
+  padding: 0 32px;
+  width: 190px;
+  margin: 20px 0 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  color: #fff;
+  background-color: #00a400;
+}
+
+@media (width >= 529px) {
+  .container {
+    width: 396px;
+  }
+
+  .sign_up_container {
+    width: 432px;
+  }
+}
+
+@media (width >= 900px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 83vh;
+    background-color: #f0f2f5;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+    margin: 0 40px;
+    padding: 0;
+    background-color: unset;
+  }
+
+  .main_text {
+    align-self: flex-start;
+    align-items: start;
+    text-align: start;
+    width: 36%;
+    margin-top: 50px;
+  }
+
+  .main_text > .Facebook_headline {
+    margin-left: -30px;
+  }
+
+  .main_text > h1 {
+    width: 368px;
+  }
+}
+
+@media (width >= 1078px) {
+  main {
+    width: 980px;
+    padding: 55px 0 0;
+  }
+
+  .main_text {
+    width: 432px;
+  }
+
+  .main_text > h1 {
+    font-size: 28px;
+    line-height: 32px;
+    width: unset;
+  }
+}
