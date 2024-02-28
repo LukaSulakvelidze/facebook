@@ -90,8 +90,8 @@ export function registration_validation() {
 
   if (
     password_reg.value === "" ||
-    password_reg.value.length > 8 ||
-    password_reg.value.length < 22
+    password_reg.value.length < 8 ||
+    password_reg.value.length > 22
   ) {
     password_reg.value = ""
     password_reg.style.border = "solid 1px #f02849";
@@ -159,7 +159,7 @@ export function registration_validation() {
     lastname_reg.value !== "" &&
     mailformat.test(email_reg.value) &&
     password_reg.value !== "" &&
-    password_reg.value.length > 8 &&
+    password_reg.value.length >= 8 &&
     password_reg.value.length < 22
   ) {
     if (
